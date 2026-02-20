@@ -7,15 +7,20 @@ import { KpiCard } from "./KpiCard"
 import { SbtiIndicator } from "./SbtiIndicator"
 import { SptProgressBar } from "./SptProgressBar"
 
-export function KpiSection() {
-  const [summary, setSummary] = useState<Summary | null>(null)
+interface Props {
+  summary?: Summary | null
+}
+
+export function KpiSection({ summary: initialSummary }: Props) {
+  const [summary, setSummary] = useState<Summary | null>(initialSummary ?? null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    if (initialSummary) return  // Skip client fetch — server already provided data
     fetchSummary()
       .then(setSummary)
       .catch((e) => setError(e.message))
-  }, [])
+  }, [initialSummary])
 
   if (error) {
     return (

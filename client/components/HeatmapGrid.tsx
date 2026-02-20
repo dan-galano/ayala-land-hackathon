@@ -45,8 +45,6 @@ export const HeatmapGrid = memo(function HeatmapGrid({ units }: Props) {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-white text-2xl font-bold mb-4">Avida Towers Vita</h1>
-
       {/* Grid area: floor labels on the left, cell grid on the right */}
       <div className="flex gap-4">
         {/* Left axis: floor labels F26 (top) → F2 (bottom) */}
@@ -65,7 +63,7 @@ export const HeatmapGrid = memo(function HeatmapGrid({ units }: Props) {
         <div
           className="grid gap-[2px]"
           style={{
-            gridTemplateColumns: 'repeat(20, minmax(0, 1fr))',
+            gridTemplateColumns: 'repeat(20, minmax(28px, 1fr))',
             gridTemplateRows: 'repeat(25, 28px)',
           }}
         >

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-spike-glow: spike-glow 1.5s ease-in-out infinite;
+
+  @keyframes spike-glow {
+    0%, 100% {
+      box-shadow: 0 0 4px 1px rgb(239 68 68 / 0.6);
+    }
+    50% {
+      box-shadow: 0 0 10px 3px rgb(239 68 68 / 0.9);
+    }
+  }
+}

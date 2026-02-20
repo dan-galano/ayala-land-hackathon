@@ -60,11 +60,11 @@ Plans:
   2. The SBTi progress indicator shows building % of annual carbon budget consumed against Ayala's 42% reduction target with a clear on-track / at-risk label
   3. The green loan SPT progress bar shows current energy savings % against the 40% SPT covenant target with a label that communicates urgency when below target
   4. All numeric values on screen are internally coherent — no card contradicts another (CO2e reconciles with kWh, savings % aligns with loan bar)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: KPI summary cards using Tremor
-- [ ] 03-02: ESG compliance indicators and green loan progress bar
+- [ ] 03-01-PLAN.md — Data layer (Summary type, API client) + presentational components (KpiCard, SbtiIndicator, SptProgressBar) using plain Tailwind v4
+- [ ] 03-02-PLAN.md — KpiSection assembly with live /api/summary fetch, mounted on dashboard page
 
 ### Phase 4: Integration and Demo
 **Goal**: The complete dashboard is assembled, all components render real API data, and the team can deliver the scripted demo narrative without hesitation

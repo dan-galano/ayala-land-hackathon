@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Seeded data, shared constants, and Express API endpoints that unblock all parallel workstreams
 - [ ] **Phase 2: Heatmap** - 500-unit grid heatmap with anomaly visual indicators (parallel workstream A)
-- [ ] **Phase 3: KPI and Compliance** - KPI cards, ESG metrics, and green loan progress bar (parallel workstream B)
+- [x] **Phase 3: KPI and Compliance** - KPI cards, ESG metrics, and green loan progress bar (parallel workstream B)
 - [ ] **Phase 4: Integration and Demo** - Full page assembly, anomaly panel, API wiring, and demo rehearsal
 
 ## Phase Details
@@ -64,7 +64,7 @@ Plans:
 
 Plans:
 - [x] 03-01-PLAN.md — Data layer (Summary type, API client) + presentational components (KpiCard, SbtiIndicator, SptProgressBar) using plain Tailwind v4
-- [ ] 03-02-PLAN.md — KpiSection assembly with live /api/summary fetch, mounted on dashboard page
+- [x] 03-02-PLAN.md — KpiSection assembly with live /api/summary fetch, mounted on dashboard page
 
 ### Phase 4: Integration and Demo
 **Goal**: The complete dashboard is assembled, all components render real API data, and the team can deliver the scripted demo narrative without hesitation
@@ -90,5 +90,5 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-02-20 |
 | 2. Heatmap | 0/3 | Not started | - |
-| 3. KPI and Compliance | 1/2 | In progress | - |
+| 3. KPI and Compliance | 2/2 | Complete    | 2026-02-20 |
 | 4. Integration and Demo | 0/2 | Not started | - |

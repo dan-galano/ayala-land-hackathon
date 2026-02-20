@@ -75,11 +75,12 @@ Plans:
   2. The demo narrative works end-to-end: open dashboard showing 38% of 40% target, identify Unit 1203 on the heatmap as critical, observe vampire load badge in anomaly panel, see loan bar at AT RISK
   3. The anomaly panel lists the top flagged units with orange (vampire) and red (spike) badges and correct kWh values matching the heatmap
   4. ESG numbers on screen are verified consistent — CO2e, savings %, and SPT % do not contradict each other
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: Anomaly panel component and full page composition
-- [ ] 04-02: API wiring with Promise.all and demo validation
+- [ ] 04-01-PLAN.md — AnomalyPanel component (new) + KpiSection optional summary prop upgrade
+- [ ] 04-02-PLAN.md — page.tsx Promise.all integration + HeatmapGrid duplicate title fix + full build verification
+- [ ] 04-03-PLAN.md — Demo narrative verification: start servers, walk 5-beat narrative, human sign-off
 
 ## Progress
 
@@ -91,4 +92,4 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 | 1. Foundation | 2/2 | Complete    | 2026-02-20 |
 | 2. Heatmap | 3/3 | Complete    | 2026-02-20 |
 | 3. KPI and Compliance | 2/2 | Complete    | 2026-02-20 |
-| 4. Integration and Demo | 0/2 | Not started | - |
+| 4. Integration and Demo | 0/3 | Not started | - |

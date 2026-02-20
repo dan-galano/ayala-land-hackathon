@@ -31,7 +31,7 @@ Requirements for hackathon MVP (3-hour build). Each maps to roadmap phases.
 
 ### Anomaly Detection
 
-- [ ] **ANOM-01**: System flags units exceeding energy thresholds with visual indicators on the heatmap grid
+- [x] **ANOM-01**: System flags units exceeding energy thresholds with visual indicators on the heatmap grid
 - [x] **ANOM-02**: System classifies anomalies into two types: vampire loads (persistent high baseline when unoccupied — orange) and dangerous spikes (sudden surge indicating faulty appliance — red)
 
 ## v2 Requirements
@@ -91,7 +91,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ESG-01 | Phase 3 | Complete |
 | ESG-02 | Phase 3 | Complete |
 | FIN-01 | Phase 3 | Complete |
-| ANOM-01 | Phase 2 | Pending |
+| ANOM-01 | Phase 2 | Complete |
 | ANOM-02 | Phase 2 | Complete |
 
 **Coverage:**

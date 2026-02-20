@@ -12,7 +12,7 @@ Four phases that match the natural dependency graph of a 3-hour hackathon build.
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Seeded data, shared constants, and Express API endpoints that unblock all parallel workstreams
+- [x] **Phase 1: Foundation** - Seeded data, shared constants, and Express API endpoints that unblock all parallel workstreams
 - [ ] **Phase 2: Heatmap** - 500-unit grid heatmap with anomaly visual indicators (parallel workstream A)
 - [ ] **Phase 3: KPI and Compliance** - KPI cards, ESG metrics, and green loan progress bar (parallel workstream B)
 - [ ] **Phase 4: Integration and Demo** - Full page assembly, anomaly panel, API wiring, and demo rehearsal
@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Pure data layer: constants, types, classifier, seed generator (500 units), and building aggregator
-- [ ] 01-02-PLAN.md — Express 5 server: package setup, CORS, routes for /api/units, /api/summary, /api/anomalies
+- [x] 01-02-PLAN.md — Express 5 server: package setup, CORS, routes for /api/units, /api/summary, /api/anomalies
 
 ### Phase 2: Heatmap
 **Goal**: Property managers can see all 500+ units on a color-coded grid and click any cell to see unit-level detail
@@ -87,7 +87,7 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/2 | In progress | - |
+| 1. Foundation | 2/2 | Complete | 2026-02-20 |
 | 2. Heatmap | 0/2 | Not started | - |
 | 3. KPI and Compliance | 0/2 | Not started | - |
 | 4. Integration and Demo | 0/2 | Not started | - |

@@ -44,11 +44,12 @@ Plans:
   2. The heatmap renders without visible jank — scrolling and initial paint complete without perceptible freeze on demo hardware
   3. Clicking any heatmap cell reveals unit-level detail showing unit ID, floor, kWh consumed, CO2e, and anomaly type (if flagged)
   4. Anomalous units display distinct visual treatment: orange for vampire loads (persistent high baseline) and red for dangerous spikes (sudden surge)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: HeatmapGrid and UnitCell components with React.memo
-- [ ] 02-02: Unit detail panel on cell click
+- [ ] 02-01-PLAN.md — Next.js 16 scaffold in client/, Tailwind v4 globals.css with spike-glow animation, client/lib/types.ts
+- [ ] 02-02-PLAN.md — HeatmapGrid (25×20 CSS Grid, floor labels, selectedUnit state) and UnitCell (React.memo, status colors, anomaly icons)
+- [ ] 02-03-PLAN.md — UnitDetailPanel (CSS slide panel) + app/page.tsx (server fetch) + human verification checkpoint
 
 ### Phase 3: KPI and Compliance
 **Goal**: Property managers can read the building's energy performance, Scope 3 carbon exposure, and green loan covenant status from a single screen
@@ -88,6 +89,6 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-02-20 |
-| 2. Heatmap | 0/2 | Not started | - |
+| 2. Heatmap | 0/3 | Not started | - |
 | 3. KPI and Compliance | 0/2 | Not started | - |
 | 4. Integration and Demo | 0/2 | Not started | - |

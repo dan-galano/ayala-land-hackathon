@@ -9,10 +9,10 @@ Requirements for hackathon MVP (3-hour build). Each maps to roadmap phases.
 
 ### Data Foundation
 
-- [ ] **DATA-01**: System generates seeded energy data for 500+ condo units with realistic Philippine consumption patterns (studio: 80–150 kWh/mo, 1BR: 120–250, 2BR: 200–400)
-- [ ] **DATA-02**: System includes 3–5% of units as intentional vampire load outliers and 1–2% as dangerous spike anomalies in seeded data
-- [ ] **DATA-03**: System uses a shared constants file with PH grid emission factor (0.672 kg CO₂e/kWh), baseline kWh per unit type, and SPT target thresholds
-- [ ] **DATA-04**: System provides a threshold rules engine as a shared utility that classifies units as normal/elevated/warning/critical/vampire
+- [x] **DATA-01**: System generates seeded energy data for 500+ condo units with realistic Philippine consumption patterns (studio: 80–150 kWh/mo, 1BR: 120–250, 2BR: 200–400)
+- [x] **DATA-02**: System includes 3–5% of units as intentional vampire load outliers and 1–2% as dangerous spike anomalies in seeded data
+- [x] **DATA-03**: System uses a shared constants file with PH grid emission factor (0.672 kg CO₂e/kWh), baseline kWh per unit type, and SPT target thresholds
+- [x] **DATA-04**: System provides a threshold rules engine as a shared utility that classifies units as normal/elevated/warning/critical/vampire
 
 ### Dashboard Visualization
 
@@ -81,10 +81,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
-| DATA-03 | Phase 1 | Pending |
-| DATA-04 | Phase 1 | Pending |
+| DATA-01 | Phase 1 | Complete (01-01) |
+| DATA-02 | Phase 1 | Complete (01-01) |
+| DATA-03 | Phase 1 | Complete (01-01) |
+| DATA-04 | Phase 1 | Complete (01-01) |
 | VIZ-01 | Phase 3 | Pending |
 | VIZ-02 | Phase 2 | Pending |
 | VIZ-03 | Phase 2 | Pending |

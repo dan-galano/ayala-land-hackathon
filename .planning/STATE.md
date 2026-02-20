@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 ## Current Position
 
 Phase: 1 of 4 (Foundation)
-Plan: 0 of 2 in current phase
-Status: Ready to plan
-Last activity: 2026-02-20 — Roadmap created, phases derived from requirements
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-20 — Completed plan 01-01: pure data layer (constants, types, classifier, seed, aggregator)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 10%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 7 min
+- Total execution time: 0.1 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1 | 7 min | 7 min |
 
 **Recent Trend:**
-- Last 5 plans: —
+- Last 5 plans: 01-01 (7 min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -46,6 +46,9 @@ Recent decisions affecting current work:
 - Static seeded data over live ticking (demo reliability)
 - Express pre-aggregation pattern (all ESG math server-side, React is purely presentational)
 - Shared constants file is critical path — prevents ESG number incoherence across cards
+- faker.seed(42) must be at module level before any faker usage (not inside function) to guarantee RNG determinism
+- Hero unit overrides applied as post-loop map pass — preserves RNG sequence for all non-hero units
+- savingsPercent computed from raw totalKwh/totalBaselineKwh only (never sum of per-unit values) to prevent float drift
 
 ### Pending Todos
 
@@ -60,5 +63,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Roadmap created. Phases 1-4 defined. All 12 v1 requirements mapped. Ready to plan Phase 1.
+Stopped at: Completed 01-01-PLAN.md — pure data layer (constants, types, classifier, seed, aggregator). Next: 01-02-PLAN.md (Express 5 server setup and API routes).
 Resume file: None

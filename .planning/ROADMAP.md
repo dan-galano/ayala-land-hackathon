@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Pure data layer: constants, types, classifier, seed generator (500 units), and building aggregator
+- [x] 01-01-PLAN.md — Pure data layer: constants, types, classifier, seed generator (500 units), and building aggregator
 - [ ] 01-02-PLAN.md — Express 5 server: package setup, CORS, routes for /api/units, /api/summary, /api/anomalies
 
 ### Phase 2: Heatmap
@@ -87,7 +87,7 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 1/2 | In progress | - |
 | 2. Heatmap | 0/2 | Not started | - |
 | 3. KPI and Compliance | 0/2 | Not started | - |
 | 4. Integration and Demo | 0/2 | Not started | - |

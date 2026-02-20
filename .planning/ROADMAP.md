@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. `GET /api/anomalies` returns a pre-filtered list containing 3-5% vampire load units and 1-2% dangerous spike units matching intentional outliers in the seed
   4. The seed is deterministic — restarting the server returns identical unit data including named hero units (e.g., Unit 1203 always critical)
   5. CORS is configured so the Next.js dev server can call all three endpoints without browser errors
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Seed generator, shared constants, and threshold classifier
-- [ ] 01-02: Express routes and API server
+- [ ] 01-01-PLAN.md — Pure data layer: constants, types, classifier, seed generator (500 units), and building aggregator
+- [ ] 01-02-PLAN.md — Express 5 server: package setup, CORS, routes for /api/units, /api/summary, /api/anomalies
 
 ### Phase 2: Heatmap
 **Goal**: Property managers can see all 500+ units on a color-coded grid and click any cell to see unit-level detail

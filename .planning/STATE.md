@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** Property managers can instantly see which units are exceeding their carbon budget and threatening compliance with Ayala's ₱56B sustainability-linked loans
-**Current focus:** Phase 3 complete — Phase 4 — Heatmap Dashboard
+**Current focus:** Phase 2 — Heatmap (plan 02-02 complete, ready for 02-03)
 
 ## Current Position
 
-Phase: 3 of 4 (KPI and Compliance) — COMPLETE
-Plan: 2 of 2 in current phase — ALL PLANS COMPLETE
-Status: Phase 3 complete — ready for Phase 4 (Heatmap Dashboard)
-Last activity: 2026-02-20 — Completed plan 03-02: KpiSection.tsx wiring all Phase 3 components with live /api/summary fetch; dashboard page renders live KPI data
+Phase: 2 of 4 (Heatmap)
+Plan: 2 of 3 in current phase (02-02 complete)
+Status: In progress — plan 02-02 complete, ready for 02-03 (UnitDetailPanel)
+Last activity: 2026-02-20 — Completed plan 02-02: HeatmapGrid and UnitCell components — 500-cell CSS Grid with React.memo leaf cells, STATUS_CLASSES Record, anomaly icons, floor labels
 
 Progress: [████████░░] 75%
 
@@ -36,6 +36,7 @@ Progress: [████████░░] 75%
 - Trend: stable
 
 *Updated after each plan completion*
+| 02-heatmap P02 | 2 | 7 min | 7 min |
 
 ## Accumulated Context
 
@@ -60,6 +61,10 @@ Recent decisions affecting current work:
 - KPI components display savingsPercent for human text, use progress for bar fill width
 - KpiSection owns the single /api/summary fetch — no props, no client recomputation of ESG values
 - Phase 4 will add optional summary prop to KpiSection when lifting state for Promise.all fetch
+- STATUS_CLASSES Record lookup over switch/if-else for UnitCell status colors (per CONTEXT.md anti-patterns)
+- Inline style for gridTemplateColumns/gridTemplateRows instead of grid-cols-20 (Tailwind v4 escape hatch)
+- UnitDetailPanel added as placeholder import in HeatmapGrid (expected TS2307 error resolved in plan 03)
+- React.memo on both UnitCell and HeatmapGrid; isSelected changes for exactly 2 cells per click
 
 ### Pending Todos
 
@@ -73,5 +78,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Completed 03-02-PLAN.md — KpiSection.tsx wiring four KPI cards and two compliance bars with single /api/summary fetch. Dashboard page renders live data from Express API. Phase 3 complete (2 of 2 plans). Next: Phase 4 (Heatmap Dashboard).
+Stopped at: Completed 02-02-PLAN.md — HeatmapGrid and UnitCell components. 500-cell CSS Grid with React.memo leaf cells, STATUS_CLASSES lookup, anomaly icons, and F26-F2 floor labels. Phase 2 plan 2 of 3 complete. Next: 02-03 (UnitDetailPanel slide-in).
 Resume file: None

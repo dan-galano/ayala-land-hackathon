@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** Property managers can instantly see which units are exceeding their carbon budget and threatening compliance with Ayala's ₱56B sustainability-linked loans
-**Current focus:** Phase 3 — KPI and Compliance
+**Current focus:** Phase 2 — Heatmap (completing) / Phase 3 — KPI and Compliance
 
 ## Current Position
 
-Phase: 3 of 4 (KPI and Compliance)
-Plan: 1 of 2 in current phase
-Status: In progress — plan 03-01 complete, ready for 03-02
-Last activity: 2026-02-20 — Completed plan 03-01: KPI data layer (Summary types, API helpers) and five compliance indicator components (KpiCard, SbtiIndicator, SptProgressBar)
+Phase: 2 of 4 (Heatmap)
+Plan: 1 of 3 in current phase (02-01 complete)
+Status: In progress — plan 02-01 complete, ready for 02-02 and 02-03
+Last activity: 2026-02-20 — Completed plan 02-01: Next.js 16 scaffold in client/ with Tailwind v4 spike-glow animation and shared types mirroring server API contract
 
 Progress: [████░░░░░░] 40%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 7.3 min
-- Total execution time: 0.37 hours
+- Total plans completed: 4
+- Average duration: 9 min
+- Total execution time: 0.60 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 15 min | 7.5 min |
+| 02-heatmap | 1 | 14 min | 14 min |
 | 03-kpi-and-compliance | 1 | 7 min | 7 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (7 min), 01-02 (8 min), 03-01 (7 min)
+- Last 5 plans: 01-01 (7 min), 01-02 (8 min), 03-01 (7 min), 02-01 (14 min)
 - Trend: stable
 
 *Updated after each plan completion*
@@ -72,5 +73,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Completed 03-01-PLAN.md — KPI data layer (Summary types, API fetch helpers) and three compliance components (KpiCard, SbtiIndicator, SptProgressBar). Phase 3 plan 1 of 2 complete. Next: 03-02 (KpiSection wiring with live API data).
+Stopped at: Completed 02-01-PLAN.md — Next.js 16 scaffold with Tailwind v4 spike-glow animation and shared types. Phase 2 plan 1 of 3 complete. Next: 02-02 (HeatmapGrid component) and 02-03 (UnitCell component).
 Resume file: None

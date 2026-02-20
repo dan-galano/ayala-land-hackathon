@@ -17,7 +17,7 @@ Requirements for hackathon MVP (3-hour build). Each maps to roadmap phases.
 ### Dashboard Visualization
 
 - [x] **VIZ-01**: Property manager can view KPI summary cards showing total kWh consumed, total CO₂ saved vs baseline, number of units over threshold, and % energy savings vs baseline
-- [ ] **VIZ-02**: Property manager can view a grid heatmap of 500+ units color-coded green/yellow/orange/red by energy status
+- [x] **VIZ-02**: Property manager can view a grid heatmap of 500+ units color-coded green/yellow/orange/red by energy status
 - [ ] **VIZ-03**: Property manager can click a heatmap cell to see unit-level detail (unit ID, floor, kWh consumed, CO₂e, anomaly type if any)
 
 ### ESG Compliance
@@ -32,7 +32,7 @@ Requirements for hackathon MVP (3-hour build). Each maps to roadmap phases.
 ### Anomaly Detection
 
 - [ ] **ANOM-01**: System flags units exceeding energy thresholds with visual indicators on the heatmap grid
-- [ ] **ANOM-02**: System classifies anomalies into two types: vampire loads (persistent high baseline when unoccupied — orange) and dangerous spikes (sudden surge indicating faulty appliance — red)
+- [x] **ANOM-02**: System classifies anomalies into two types: vampire loads (persistent high baseline when unoccupied — orange) and dangerous spikes (sudden surge indicating faulty appliance — red)
 
 ## v2 Requirements
 
@@ -86,13 +86,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-03 | Phase 1 | Complete (01-01) |
 | DATA-04 | Phase 1 | Complete (01-01) |
 | VIZ-01 | Phase 3 | Complete |
-| VIZ-02 | Phase 2 | Pending |
+| VIZ-02 | Phase 2 | Complete |
 | VIZ-03 | Phase 2 | Pending |
 | ESG-01 | Phase 3 | Complete |
 | ESG-02 | Phase 3 | Complete |
 | FIN-01 | Phase 3 | Complete |
 | ANOM-01 | Phase 2 | Pending |
-| ANOM-02 | Phase 2 | Pending |
+| ANOM-02 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 12 total

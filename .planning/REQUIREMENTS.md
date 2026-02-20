@@ -18,7 +18,7 @@ Requirements for hackathon MVP (3-hour build). Each maps to roadmap phases.
 
 - [x] **VIZ-01**: Property manager can view KPI summary cards showing total kWh consumed, total CO₂ saved vs baseline, number of units over threshold, and % energy savings vs baseline
 - [x] **VIZ-02**: Property manager can view a grid heatmap of 500+ units color-coded green/yellow/orange/red by energy status
-- [ ] **VIZ-03**: Property manager can click a heatmap cell to see unit-level detail (unit ID, floor, kWh consumed, CO₂e, anomaly type if any)
+- [x] **VIZ-03**: Property manager can click a heatmap cell to see unit-level detail (unit ID, floor, kWh consumed, CO₂e, anomaly type if any)
 
 ### ESG Compliance
 
@@ -87,7 +87,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-04 | Phase 1 | Complete (01-01) |
 | VIZ-01 | Phase 3 | Complete |
 | VIZ-02 | Phase 2 | Complete |
-| VIZ-03 | Phase 2 | Pending |
+| VIZ-03 | Phase 2 | Complete |
 | ESG-01 | Phase 3 | Complete |
 | ESG-02 | Phase 3 | Complete |
 | FIN-01 | Phase 3 | Complete |

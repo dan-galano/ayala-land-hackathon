@@ -13,7 +13,7 @@ Four phases that match the natural dependency graph of a 3-hour hackathon build.
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Seeded data, shared constants, and Express API endpoints that unblock all parallel workstreams
-- [ ] **Phase 2: Heatmap** - 500-unit grid heatmap with anomaly visual indicators (parallel workstream A)
+- [x] **Phase 2: Heatmap** - 500-unit grid heatmap with anomaly visual indicators (parallel workstream A) (completed 2026-02-20)
 - [x] **Phase 3: KPI and Compliance** - KPI cards, ESG metrics, and green loan progress bar (parallel workstream B)
 - [ ] **Phase 4: Integration and Demo** - Full page assembly, anomaly panel, API wiring, and demo rehearsal
 
@@ -89,6 +89,6 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-02-20 |
-| 2. Heatmap | 2/3 | In Progress|  |
+| 2. Heatmap | 3/3 | Complete   | 2026-02-20 |
 | 3. KPI and Compliance | 2/2 | Complete    | 2026-02-20 |
 | 4. Integration and Demo | 0/2 | Not started | - |

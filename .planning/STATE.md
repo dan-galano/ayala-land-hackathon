@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** Property managers can instantly see which units are exceeding their carbon budget and threatening compliance with Ayala's ₱56B sustainability-linked loans
-**Current focus:** Phase 4 — Integration and Demo (plan 1 of 3 done)
+**Current focus:** Phase 4 — Integration and Demo (plan 2 of 3 done)
 
 ## Current Position
 
 Phase: 4 of 4 (Integration and Demo)
-Plan: 1 of 3 in current phase (04-01 complete)
-Status: Phase 4 in progress — AnomalyPanel and KpiSection prop upgrade done. Ready for Plan 02 (page.tsx integration).
-Last activity: 2026-02-20 — Completed plan 04-01: AnomalyPanel component and KpiSection optional summary prop upgrade.
+Plan: 2 of 3 in current phase (04-02 complete)
+Status: Phase 4 in progress — Full dashboard integration complete. page.tsx uses Promise.all for 3-endpoint fetch. Ready for Plan 03.
+Last activity: 2026-02-20 — Completed plan 04-02: page.tsx Promise.all integration, AnomalyPanel sidebar layout, duplicate H1 removed from HeatmapGrid.
 
 Progress: [██████████] 100%
 
@@ -39,6 +39,7 @@ Progress: [██████████] 100%
 | 02-heatmap P03 | 2 | 8 min | 8 min |
 | Phase 02-heatmap P03 | 8 | 2 tasks | 2 files |
 | Phase 04-integration-and-demo P01 | 1 | 2 tasks | 2 files |
+| Phase 04-integration-and-demo P02 | 2 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - cache: force-cache for seeded static data — avoids redundant API calls during development
 - [Phase 04-integration-and-demo]: AnomalyPanel has no 'use client' directive — purely presentational, receives props from page.tsx server component
 - [Phase 04-integration-and-demo]: KpiSection optional prop pattern: useState(initialSummary ?? null) + if (initialSummary) return in useEffect to skip client fetch when server data provided
+- [Phase 04-integration-and-demo P02]: Two-phase Promise.all: fetch phase then JSON parse phase — prevents silent failures, avoids sequential round-trips
+- [Phase 04-integration-and-demo P02]: Semicolon before destructuring assignment (;[a, b, c] = await ...) required to prevent JS treating [ as array access
+- [Phase 04-integration-and-demo P02]: AnomalyPanel in w-80 shrink-0 sidebar alongside flex-1 min-w-0 HeatmapGrid — fixed-width panel, heatmap gets remaining space
 
 ### Pending Todos
 
@@ -85,5 +89,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Completed 04-01-PLAN.md — AnomalyPanel presentational component and KpiSection optional summary prop upgrade. Phase 4 in progress (1 of 3 plans done).
+Stopped at: Completed 04-02-PLAN.md — page.tsx Promise.all integration, AnomalyPanel sidebar, duplicate H1 removed. Phase 4 in progress (2 of 3 plans done).
 Resume file: None

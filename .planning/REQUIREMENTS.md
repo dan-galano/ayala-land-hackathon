@@ -16,18 +16,18 @@ Requirements for hackathon MVP (3-hour build). Each maps to roadmap phases.
 
 ### Dashboard Visualization
 
-- [ ] **VIZ-01**: Property manager can view KPI summary cards showing total kWh consumed, total CO₂ saved vs baseline, number of units over threshold, and % energy savings vs baseline
+- [x] **VIZ-01**: Property manager can view KPI summary cards showing total kWh consumed, total CO₂ saved vs baseline, number of units over threshold, and % energy savings vs baseline
 - [ ] **VIZ-02**: Property manager can view a grid heatmap of 500+ units color-coded green/yellow/orange/red by energy status
 - [ ] **VIZ-03**: Property manager can click a heatmap cell to see unit-level detail (unit ID, floor, kWh consumed, CO₂e, anomaly type if any)
 
 ### ESG Compliance
 
-- [ ] **ESG-01**: Property manager can view a CO₂ emissions card explicitly labeled "Scope 3 Tenant Emissions" showing total tenant CO₂e for the building
-- [ ] **ESG-02**: Property manager can view an SBTi progress indicator showing % of annual carbon budget consumed against Ayala's verified 42% reduction target
+- [x] **ESG-01**: Property manager can view a CO₂ emissions card explicitly labeled "Scope 3 Tenant Emissions" showing total tenant CO₂e for the building
+- [x] **ESG-02**: Property manager can view an SBTi progress indicator showing % of annual carbon budget consumed against Ayala's verified 42% reduction target
 
 ### Financial Monitoring
 
-- [ ] **FIN-01**: Property manager can view a green loan SPT progress bar showing building's current energy savings % against the 40% target required by sustainability-linked loan covenants
+- [x] **FIN-01**: Property manager can view a green loan SPT progress bar showing building's current energy savings % against the 40% target required by sustainability-linked loan covenants
 
 ### Anomaly Detection
 
@@ -85,12 +85,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-02 | Phase 1 | Complete (01-01) |
 | DATA-03 | Phase 1 | Complete (01-01) |
 | DATA-04 | Phase 1 | Complete (01-01) |
-| VIZ-01 | Phase 3 | Pending |
+| VIZ-01 | Phase 3 | Complete |
 | VIZ-02 | Phase 2 | Pending |
 | VIZ-03 | Phase 2 | Pending |
-| ESG-01 | Phase 3 | Pending |
-| ESG-02 | Phase 3 | Pending |
-| FIN-01 | Phase 3 | Pending |
+| ESG-01 | Phase 3 | Complete |
+| ESG-02 | Phase 3 | Complete |
+| FIN-01 | Phase 3 | Complete |
 | ANOM-01 | Phase 2 | Pending |
 | ANOM-02 | Phase 2 | Pending |
 

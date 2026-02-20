@@ -63,7 +63,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Data layer (Summary type, API client) + presentational components (KpiCard, SbtiIndicator, SptProgressBar) using plain Tailwind v4
+- [x] 03-01-PLAN.md — Data layer (Summary type, API client) + presentational components (KpiCard, SbtiIndicator, SptProgressBar) using plain Tailwind v4
 - [ ] 03-02-PLAN.md — KpiSection assembly with live /api/summary fetch, mounted on dashboard page
 
 ### Phase 4: Integration and Demo
@@ -90,5 +90,5 @@ Phases execute in numeric order: 1 → 2 (parallel with 3) → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-02-20 |
 | 2. Heatmap | 0/3 | Not started | - |
-| 3. KPI and Compliance | 0/2 | Not started | - |
+| 3. KPI and Compliance | 1/2 | In progress | - |
 | 4. Integration and Demo | 0/2 | Not started | - |

@@ -10,7 +10,7 @@
 ### Locked Decisions
 
 #### Building Structure
-- Single building: "Avida Towers Vita" (realistic Ayala brand)
+- Single building: "Ayala Land" (realistic Ayala brand)
 - 25 floors, 20 units per floor = 500 units
 - Unit mix: 40% studio, 40% 1BR, 20% 2BR (typical Avida distribution)
 - Unit ID format: floor + position, e.g., "Unit 0301" = Floor 3, Position 01

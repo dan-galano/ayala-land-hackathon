@@ -14,7 +14,7 @@
 - Floor labels on the left axis ("F2", "F3", ... "F26") — bottom-to-top like a real building
 - Cell size: small enough that all 500 cells fit on screen without scrolling (approx 24-32px per cell)
 - Row/column gap: 2px — tight grid, building feel
-- Building name "Avida Towers Vita" as header above the grid
+- Building name "Ayala Land" as header above the grid
 
 **Color Scheme**
 - Dark background (slate-900 or similar) — makes colored cells pop for demo impact
@@ -151,7 +151,7 @@ export default async function Page() {
   const units: Unit[] = await res.json()
   return (
     <main className="min-h-screen bg-slate-900 p-6">
-      <h1 className="text-white text-2xl font-bold mb-4">Avida Towers Vita</h1>
+      <h1 className="text-white text-2xl font-bold mb-4">Ayala Land</h1>
       <HeatmapGrid units={units} />
     </main>
   )

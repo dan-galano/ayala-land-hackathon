@@ -106,7 +106,7 @@ export default async function Page() {
 
   return (
     <main className="p-6 space-y-6">
-      <h1 className="text-2xl font-bold text-white">Avida Towers Vita — Net-Zero Command Center</h1>
+      <h1 className="text-2xl font-bold text-white">Ayala Land — Net-Zero Command Center</h1>
       <KpiSection />
       <HeatmapGrid units={units} />
     </main>
@@ -152,7 +152,7 @@ export default async function Page() {
   return (
     <main className="p-6 space-y-6">
       <h1 className="text-2xl font-bold text-white">
-        Avida Towers Vita — Net-Zero Command Center
+        Ayala Land — Net-Zero Command Center
       </h1>
       <KpiSection summary={summary} />
       <div className="flex gap-6">
@@ -321,7 +321,7 @@ export function AnomalyPanel({ anomalies }: Props) {
 - **Keeping KpiSection's independent useEffect when summary prop is provided:** Results in a double fetch — one server fetch in page.tsx AND one client-side useEffect fetch. On the demo, both render fine but the client fetch is redundant and creates a brief loading flash.
 - **Making AnomalyPanel a 'use client' component:** It receives static props from a server component — no interactivity needed. No client boundary required.
 - **Fetching anomalies from the client:** The `/api/anomalies` endpoint is CORS-restricted to `localhost:3000`. A server-side fetch in page.tsx bypasses CORS entirely (Node.js process, not browser). Client-side fetch works too but adds network latency visible during demo.
-- **Duplicate title "Avida Towers Vita" on page:** `HeatmapGrid` renders its own `<h1>Avida Towers Vita</h1>` (line 48 of HeatmapGrid.tsx). `page.tsx` also renders the same title (line 21). This is a duplicate heading that should be resolved — either remove from HeatmapGrid or from page.tsx.
+- **Duplicate title "Ayala Land" on page:** `HeatmapGrid` renders its own `<h1>Ayala Land</h1>` (line 48 of HeatmapGrid.tsx). `page.tsx` also renders the same title (line 21). This is a duplicate heading that should be resolved — either remove from HeatmapGrid or from page.tsx.
 
 ---
 
@@ -363,11 +363,11 @@ Do NOT try to chain `.then(r => r.json())` inside the first Promise.all — the 
 
 ### Pitfall 2: Duplicate Title Heading
 
-**What goes wrong:** The page shows "Avida Towers Vita — Net-Zero Command Center" twice — once from `page.tsx` line 21 and once from `HeatmapGrid.tsx` line 48.
+**What goes wrong:** The page shows "Ayala Land — Net-Zero Command Center" twice — once from `page.tsx` line 21 and once from `HeatmapGrid.tsx` line 48.
 
 **Why it happens:** Phase 3 plan says page.tsx renders the building header. Phase 2 put the same heading inside HeatmapGrid. Both are currently live.
 
-**How to avoid:** Remove the `<h1 className="text-white text-2xl font-bold mb-4">Avida Towers Vita</h1>` from `HeatmapGrid.tsx` (line 48). The page-level heading in `page.tsx` is authoritative. HeatmapGrid should not own the page title.
+**How to avoid:** Remove the `<h1 className="text-white text-2xl font-bold mb-4">Ayala Land</h1>` from `HeatmapGrid.tsx` (line 48). The page-level heading in `page.tsx` is authoritative. HeatmapGrid should not own the page title.
 
 **Warning signs:** Two identical headings visible at the top of the page stacked vertically.
 
@@ -490,12 +490,12 @@ const [units, summary, anomalies] = await Promise.all([
 
 ```typescript
 // client/components/HeatmapGrid.tsx — REMOVE this line (line 48):
-// <h1 className="text-white text-2xl font-bold mb-4">Avida Towers Vita</h1>
+// <h1 className="text-white text-2xl font-bold mb-4">Ayala Land</h1>
 
 // The flex wrapper that contained it:
 // BEFORE:
 <div className="flex flex-col gap-4">
-  <h1 className="text-white text-2xl font-bold mb-4">Avida Towers Vita</h1>  // REMOVE
+  <h1 className="text-white text-2xl font-bold mb-4">Ayala Land</h1>  // REMOVE
   <div className="flex gap-4">
     ...
   </div>
@@ -534,7 +534,7 @@ const [units, summary, anomalies] = await Promise.all([
    - Recommendation: The UnitDetailPanel uses `z-50` and `fixed` positioning, so it renders above the anomaly panel on click. This is acceptable behavior — clicking a heatmap cell opens the detail overlay on top of the anomaly panel. No refactoring needed; the overlay behavior is intentional.
 
 3. **Should the duplicate heading in HeatmapGrid.tsx be fixed?**
-   - What we know: HeatmapGrid line 48 renders `<h1>Avida Towers Vita</h1>`. page.tsx line 21 also renders the same title. Both are currently live.
+   - What we know: HeatmapGrid line 48 renders `<h1>Ayala Land</h1>`. page.tsx line 21 also renders the same title. Both are currently live.
    - Recommendation: Yes, remove the heading from HeatmapGrid.tsx. It is a component-level concern, not a page concern — the component should not own the page title.
 
 ---

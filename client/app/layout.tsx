@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Avida Towers Vita — Net-Zero Command Center',
+  title: 'Ayala Land — Net-Zero Command Center',
   description: 'Ayala Land energy monitoring dashboard',
 }
 

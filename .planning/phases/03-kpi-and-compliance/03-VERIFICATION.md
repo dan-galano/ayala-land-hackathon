@@ -112,7 +112,7 @@ No blockers. No stub implementations. No empty handlers. No @tremor/react usage.
 
 **Test:** With both servers running (`cd server && npm run dev` on port 3001, `cd client && npm run dev` on port 3000), open http://localhost:3000 in a browser.
 **Expected:**
-- Page heading "Avida Towers Vita — Net-Zero Command Center" visible in white
+- Page heading "Ayala Land — Net-Zero Command Center" visible in white
 - Four KPI cards in a 4-column grid: "Total Consumption" (~91,243 kWh), "Scope 3 Tenant Emissions" (~61,315 kg CO2e), "Units Over Threshold" (count), "Energy Savings vs Baseline" (38.1%)
 - SBTi indicator below: "SBTi Carbon Budget (Ayala 42% Target)" with green bar at ~90.7% and "ON TRACK" label in green
 - SPT bar: "Green Loan SPT Covenant" with red bar at ~95.3%, "AT RISK" label in red, "1.9% gap to 40% SPT covenant"

@@ -63,7 +63,7 @@ completed: 2026-02-20
 ## Accomplishments
 - UnitDetailPanel component with CSS translate slide animation, fixed-position overlay, Row helper, all required unit detail fields
 - page.tsx replaced with async Server Component that fetches 500 units from Express API at server render time, bypassing browser CORS
-- Dashboard at http://localhost:3000 confirmed rendering with "Avida Towers Vita" header and HeatmapGrid with click-to-detail panel
+- Dashboard at http://localhost:3000 confirmed rendering with "Ayala Land" header and HeatmapGrid with click-to-detail panel
 - TypeScript 0 errors across entire client project after both changes
 
 ## Task Commits

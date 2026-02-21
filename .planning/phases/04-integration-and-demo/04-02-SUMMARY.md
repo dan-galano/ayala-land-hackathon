@@ -65,7 +65,7 @@ completed: 2026-02-20
 - page.tsx now fetches all 3 API endpoints (units, summary, anomalies) concurrently via two-phase Promise.all
 - KpiSection receives `summary` prop from server — eliminates the client-side /api/summary double-fetch
 - AnomalyPanel renders in a `w-80 shrink-0` sidebar alongside the heatmap in a flex layout
-- Duplicate "Avida Towers Vita" `<h1>` removed from HeatmapGrid — single authoritative title in page.tsx
+- Duplicate "Ayala Land" `<h1>` removed from HeatmapGrid — single authoritative title in page.tsx
 - Full production build (`npm run build`) passes with 0 errors
 
 ## Task Commits
@@ -79,7 +79,7 @@ Each task was committed atomically:
 
 ## Files Created/Modified
 - `client/app/page.tsx` - Expanded from single-fetch to two-phase Promise.all with full flex layout
-- `client/components/HeatmapGrid.tsx` - Removed duplicate `<h1>Avida Towers Vita</h1>` element
+- `client/components/HeatmapGrid.tsx` - Removed duplicate `<h1>Ayala Land</h1>` element
 - `client/package.json` - Added nanoid (missing transitive dep for postcss)
 - `client/package-lock.json` - Updated lockfile after nanoid install
 

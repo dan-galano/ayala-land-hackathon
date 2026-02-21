@@ -34,7 +34,7 @@ export default async function Page() {
   return (
     <main className="p-6 space-y-6">
       <h1 className="text-2xl font-bold text-white">
-        Avida Towers Vita — Net-Zero Command Center
+        Ayala Land — Net-Zero Command Center
       </h1>
       <KpiSection summary={summary} />
       <div className="flex gap-6">

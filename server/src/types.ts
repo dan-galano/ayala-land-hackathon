@@ -13,7 +13,7 @@ export type UnitStatus = 'normal' | 'elevated' | 'warning' | 'critical' | 'vampi
 export type AnomalyType = 'vampire' | 'spike' | null;
 
 /**
- * Represents a single residential unit in Avida Towers Vita.
+ * Represents a single residential unit in Ayala Land.
  * Matches the shape of GET /api/units array items.
  */
 export interface Unit {

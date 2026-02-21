@@ -58,7 +58,7 @@ Next.js 16 app scaffolded in client/ with Tailwind v4 @theme spike-glow animatio
 
 - Next.js 16.1.6 app with React 19.2.3, TypeScript, App Router, Turbopack configured at client/
 - `globals.css` uses `@import "tailwindcss"` (v4 syntax) with `@theme` block defining `--animate-spike-glow` and `@keyframes spike-glow` for UnitCell anomaly pulsing
-- `layout.tsx` is a pure Server Component with dark `bg-slate-900` background and title "Avida Towers Vita — Net-Zero Command Center"
+- `layout.tsx` is a pure Server Component with dark `bg-slate-900` background and title "Ayala Land — Net-Zero Command Center"
 - `client/lib/types.ts` exports `Unit`, `UnitStatus`, `AnomalyType`, `UnitType` mirroring `server/src/types.ts` without shared imports
 - `client/lib/api.ts` provides `fetchSummary()` and `fetchUnits()` typed helpers using `NEXT_PUBLIC_API_URL`
 - TypeScript compilation: 0 errors

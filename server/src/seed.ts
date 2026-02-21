@@ -13,7 +13,7 @@ import type { Unit, UnitType, AnomalyType } from './types.js';
 import { classifyUnit } from './classifier.js';
 
 /**
- * Generate all 500 residential units for Avida Towers Vita.
+ * Generate all 500 residential units for Ayala Land.
  * Floors 2–26 (25 floors), 20 positions per floor = 500 units exactly.
  *
  * Hero unit overrides are applied AFTER the loop as a map pass so they

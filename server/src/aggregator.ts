@@ -1,5 +1,5 @@
 /**
- * Building-level ESG aggregator for Avida Towers Vita.
+ * Building-level ESG aggregator for Ayala Land.
  * All math is computed once at module load from pre-seeded unit data.
  * Route handlers serve from memory — no computation at request time.
  */

@@ -4,7 +4,7 @@ verified: 2026-02-20T00:00:00Z
 status: human_needed
 score: 11/11 must-haves verified
 human_verification:
-  - test: "Open http://localhost:3000 in a browser while both servers are running (Express on 3001, Next.js on 3000). Confirm: dark slate-900 background, header 'Avida Towers Vita', 500-cell color grid with F26 at top and F2 at bottom, no horizontal scroll."
+  - test: "Open http://localhost:3000 in a browser while both servers are running (Express on 3001, Next.js on 3000). Confirm: dark slate-900 background, header 'Ayala Land', 500-cell color grid with F26 at top and F2 at bottom, no horizontal scroll."
     expected: "Full heatmap renders with correct floor orientation and color distribution (many green, some yellow, some orange, a few red cells)"
     why_human: "CSS rendering, visual layout, and actual pixel output cannot be verified programmatically"
   - test: "Hover over several cells. Confirm brightness increase on hover."
@@ -118,7 +118,7 @@ All automated checks passed. The following items require human visual/interactiv
 ### 1. Full Grid Render
 
 **Test:** Start both servers (`cd server && npm run dev`, `cd client && npm run dev`), open http://localhost:3000.
-**Expected:** Dark slate-900 background, "Avida Towers Vita" header, 500-cell color grid with F26 at top and F2 at bottom, no horizontal scroll, visually distinct color bands (mostly green, some yellow/orange, a few red cells).
+**Expected:** Dark slate-900 background, "Ayala Land" header, 500-cell color grid with F26 at top and F2 at bottom, no horizontal scroll, visually distinct color bands (mostly green, some yellow/orange, a few red cells).
 **Why human:** CSS rendering, pixel layout, and color distribution require visual confirmation.
 
 ### 2. Hover Brightness Effect

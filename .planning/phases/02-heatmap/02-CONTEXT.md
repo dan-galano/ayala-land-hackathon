@@ -18,7 +18,7 @@
 - Floor labels on the left axis ("F2", "F3", ... "F26") — bottom-to-top like a real building
 - Cell size: small enough that all 500 cells fit on screen without scrolling (approx 24-32px per cell)
 - Row/column gap: 2px — tight grid, building feel
-- Building name "Avida Towers Vita" as header above the grid
+- Building name "Ayala Land" as header above the grid
 
 ### Color Scheme
 - Dark background (slate-900 or similar) — makes colored cells pop for demo impact
